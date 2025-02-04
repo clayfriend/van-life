@@ -4,6 +4,7 @@ import Home from "./Pages/Home"
 import About from "./Pages/About"
 import Vans from "./Pages/Vans"
 import "./server"
+import VansDetails from "./Pages/VansDetails"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/vans" element={<Vans/>} />
+        <Route path="/vans/:id" element={<VansDetails />}/>
       </Routes>
     </BrowserRouter>
   )
