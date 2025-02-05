@@ -227,3 +227,20 @@ header a:hover {
 i[class*='van-type-'] {
     padding: 7px 14px;
 }
+
+.host-nav{
+    display: flex;
+}
+
+.host-nav a{
+    text-decoration: none;
+    color:#4D4D4D;
+    font-weight: 500;
+    padding: 5px 20px ;
+}
+
+.host-nav a:hover{
+    text-decoration: underline;
+    color: #115E59;
+    font-weight: 600;
+}
