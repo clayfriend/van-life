@@ -10,4 +10,4 @@ export default function HostVanInfo(){
             <h4>Visibility: <span>Public</span></h4>
         </section>
     )
-}
+}  

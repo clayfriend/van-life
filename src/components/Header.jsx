@@ -20,6 +20,9 @@ export default function Header(){
           <NavLink to="/vans" style={({isActive})=> isActive? activeStyle:null}>
              Vans
           </NavLink>
+          <NavLink to="/login" >
+             Login
+          </NavLink>
         </nav>
       </header>
         </>

@@ -64,15 +64,16 @@ header a:hover {
 
 /*** FOOTER ***/
 
-footer{
+footer {
+    background-color: #161616;
+    color: #AAAAAA;
+    height: 74px;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     align-items: center;
-    background-color: #161616;
-    color: #FFF7ED;
-    margin-top: 50px;
-    width: 100%;
-    height: 5rem;
+    margin-top: 10px;
+    font-weight: 500;
 }
 
 /*** HOME PAGE ***/
@@ -186,6 +187,55 @@ footer{
 .van-list-container button {
     margin-right: 20px;
     cursor: pointer;
+}
+
+.van-type {
+    height: 34px;
+    padding: 6px 26px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFEAD0;
+    color: #4D4D4D;
+    transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.van-type:hover {
+    color: #FFEAD0;
+}
+
+.van-type:focus {
+    outline: none;
+}
+
+.van-type.selected {
+    color: #FFEAD0;
+}
+
+.van-type.simple:hover, .van-type.simple.selected {
+    background-color: #E17654;
+}
+
+.van-type.rugged:hover, .van-type.rugged.selected {
+    background-color: #115E59;
+}
+
+.van-type.luxury:hover, .van-type.luxury.selected {
+    background-color: #161616;
+}
+
+.van-type.clear-filters {
+    margin-left: -20px;
+    height: 34px;
+    padding: 6px 26px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #4D4D4D;
 }
 
 .van-type {
@@ -384,4 +434,62 @@ i[class*='van-type-'] {
 .host-van-detail-image {
     height: 100px;
     border-radius: 5px;
+}
+
+.not-found-container {
+    padding-inline: 26px;
+}
+
+.not-found-container .link-button {
+    width: 100%;
+    background-color: #161616;
+    color: white;
+}
+
+
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 27px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;    
+}
+
+.login-form > input {
+    border: 1px solid rgba(209, 213, 219);
+    height: 40px;
+    text-indent: 10px;
+    font-family: "Inter", sans-serif;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    font-weight: 400;
+}
+
+.login-form > input:focus {
+    outline: none;
+}
+
+.login-form > input:first-of-type {
+    border-radius: 6px 6px 0px 0px;
+}
+
+.login-form > input:last-of-type {
+    border-radius: 0px 0px 6px 6px;
+    border-top: none;
+}
+
+.login-form > button {
+    background-color: #FF8C38;
+    border: none;
+    border-radius: 6px;
+    height: 55px;
+    margin-top: 22px;
+    color: white;
+    font-family: "Inter", sans-serif;
 }
